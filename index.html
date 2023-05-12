@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Encriptado</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <main class="cuerpo">
+        <section class="logo">
+            <img src="img/Logo.png" alt="">
+        </section>
+        
+        <section class="entrada">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        </section>
+        <section class="texto-condicion">
+            <p>Solo letras minúsculas y sin acentos</p>
+        </section>
+            <section class="botones">
+                <button class="btn-encriptar" id="btn-encriptar" type="button" ">Encriptar</button>
+
+                 <input class="btn-desencriptar" id="btn-desencriptar" type="button" value="Desencriptar">
+             </section>
+        </section>
+        <section class="salida">
+            <img src="img/Muñeco.png" alt="" id="munheco">
+            <section class="mensaje-salida" id="mensaje-salida">
+                <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+                <p id="mensaje-ayuda">Ingrese texto que deseas encriptar o desencriptar</p>
+            </section>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            <button class="btn-copiar" id="btn-copiar" type="button" onclick="">Copiar</button>
+        </section>
+    </main>
+</body>
+<script src="js/script.js"></script>
+</html>
