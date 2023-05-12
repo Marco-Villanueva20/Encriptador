@@ -75,10 +75,9 @@ copiar.addEventListener("click", copiarTexto);
 copiar.addEventListener("touchend", copiarTexto);
 
 function copiarTexto() {
-    let mensaje = document.getElementById("mensaje");
+    let mensaje = document.getElementById("mensaje").value;
     mensaje.select();
-    navigator.clipboard.writeText(mensaje.value);
-    document.execCommand("copy");
+    navigator.clipboard.writeText(mensaje);
     alert("Texto copiado");
 }
 
