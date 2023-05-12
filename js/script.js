@@ -68,7 +68,7 @@ desencriptar.addEventListener("click",function(){
     mensaje.style.display = "none";
     tituloMensaje.style.display = "flex";
     parrafo.style.display = "flex";
-    alert("Debes ingresar algún texto");}
+    swal("Upss!!","Debes ingresar algún texto","warning");}
 });
 
 copiar.addEventListener("click", copiarTexto);
@@ -78,7 +78,14 @@ function copiarTexto() {
     let mensaje = document.getElementById("mensaje").value;
     mensaje.select();
     navigator.clipboard.writeText(mensaje);
-    alert("Texto copiado");
+     
+Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'texto copiado',
+    showConfirmButton: false,
+    timer: 1500
+  })
 }
 
 
