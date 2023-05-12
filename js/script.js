@@ -78,6 +78,7 @@ function copiarTexto() {
     let mensaje = document.getElementById("mensaje");
     mensaje.select();
     navigator.clipboard.writeText(mensaje.value);
+    document.execCommand("copy");
     alert("Texto copiado");
 }
 
