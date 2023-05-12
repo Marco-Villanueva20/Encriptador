@@ -34,7 +34,7 @@ encriptar.addEventListener("click", function() {
     mensaje.style.display = "none";
     tituloMensaje.style.display = "flex";
     parrafo.style.display = "flex";
-    swal("Upss!!","Debes ingresar algún texto","warning");
+    swal("Ohh nooo!!!!","Debes ingresar algún texto","warning");
   }
 });
 
@@ -68,7 +68,7 @@ desencriptar.addEventListener("click",function(){
     mensaje.style.display = "none";
     tituloMensaje.style.display = "flex";
     parrafo.style.display = "flex";
-    swal("Upss!!","Debes ingresar algún texto","warning");}
+    swal("Oh nooo!!!!","Debes ingresar algún texto","warning");}
 });
 
 copiar.addEventListener("click", copiarTexto);
