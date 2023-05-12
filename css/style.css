@@ -184,7 +184,7 @@
     cursor: pointer;
     box-sizing: border-box;
     padding: 5%;
-    background: #d8dfe8;
+    background: white;
     border: 1px solid #0a3871;
     width: 80%;
     height: 10% ;
@@ -258,7 +258,8 @@
         visibility: hidden;
     }
     .btn-copiar{
-        width: 60%;
+        padding: 1% 5% 6% 5%;
+        width: 30%;
         height: 5%;
         top:79%;
     }
