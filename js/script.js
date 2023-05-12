@@ -75,17 +75,15 @@ copiar.addEventListener("click", copiarTexto);
 copiar.addEventListener("touchend", copiarTexto);
 
 function copiarTexto() {
-    let mensaje = document.getElementById("mensaje").value;
+    let mensaje = document.getElementById("mensaje");
     mensaje.select();
-    navigator.clipboard.writeText(mensaje);
-     
-Swal.fire({
-    position: 'center',
-    icon: 'success',
-    title: 'texto copiado',
-    showConfirmButton: false,
-    timer: 1500
-  })
-}
+    navigator.clipboard.writeText(mensaje.value);
+    swal("Texto copiado",{
+      icon: 'success',
+      buttons: false,
+      timer: 1500
+    });
+  }
+
 
 
