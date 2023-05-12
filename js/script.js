@@ -71,10 +71,14 @@ desencriptar.addEventListener("click",function(){
     alert("Debes ingresar algún texto");}
 });
 
-copiar.addEventListener("click",function(){
+copiar.addEventListener("click", copiarTexto);
+copiar.addEventListener("touchend", copiarTexto);
+
+function copiarTexto() {
     let mensaje = document.getElementById("mensaje");
     mensaje.select();
     navigator.clipboard.writeText(mensaje.value);
     alert("Texto copiado");
-});
+}
+
 

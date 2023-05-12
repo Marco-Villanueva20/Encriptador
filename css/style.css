@@ -24,6 +24,7 @@
     line-height: 150%;/**/
     background-color: #f3f5fc;
     text-transform: lowercase;
+    resize: none;
 }
 
 .texto::placeholder{
@@ -163,6 +164,7 @@
 }
 .mensaje{
     display: none;
+    position: absolute;
     width: 80%;
     height: 70%;
     left: 10%;
@@ -173,8 +175,9 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;/**/
-    background-color: #f3f5fc;
+    background-color: white;
     text-transform: lowercase;
+    resize: none;
 }
 .btn-copiar{
     display: none;
