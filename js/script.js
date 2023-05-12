@@ -32,6 +32,7 @@ encriptar.addEventListener("click", function() {
   } else {
     munheco.style.display = "flex";
     mensaje.style.display = "none";
+    copiar.style.display="none";
     tituloMensaje.style.display = "flex";
     parrafo.style.display = "flex";
     swal("Ohh nooo!!!!","Debes ingresar algún texto","warning");
@@ -66,6 +67,7 @@ desencriptar.addEventListener("click",function(){
   } else {
     munheco.style.display = "flex";
     mensaje.style.display = "none";
+    copiar.style.display="none";
     tituloMensaje.style.display = "flex";
     parrafo.style.display = "flex";
     swal("Oh nooo!!!!","Debes ingresar algún texto","warning");}
