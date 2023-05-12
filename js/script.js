@@ -78,8 +78,8 @@ function copiarTexto() {
     let mensaje = document.getElementById("mensaje").value;
     //let eti_mensaje = document.getElementById("mensaje");
     //eti_mensaje.select();si desean seleccionar
+    //document.execCommand(mensaje); obsoleto
     navigator.clipboard.writeText(mensaje);
-    document.execCommand(mensaje);
     swal("Texto copiado",{
       icon: 'success',
       buttons: false,
