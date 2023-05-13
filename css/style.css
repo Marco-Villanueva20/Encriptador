@@ -46,6 +46,7 @@
     top: 80%;
 }
 .texto-condicion p{
+    width: 90%;
     font-family: "Inter";
     font-style: normal;/**/
     font-weight: 400;/**/
@@ -270,4 +271,9 @@
     .mensaje{
         font-size: 18px;
     }
+    .texto-condicion p{
+        font-size: 9px;
+        text-align: left;
+    }
+
 }
