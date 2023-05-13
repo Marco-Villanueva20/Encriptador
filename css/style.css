@@ -58,6 +58,9 @@
     order: 1;/**/
     flex-grow: 0;/**/
 }
+.texto-condicion p::before{
+    content: "🚨";
+}
 .botones{
     display: flex;
     flex-direction: row;
