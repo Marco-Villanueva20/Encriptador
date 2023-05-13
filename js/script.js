@@ -70,7 +70,7 @@ desencriptar.addEventListener("click",function(){
     copiar.style.display="none";
     tituloMensaje.style.display = "flex";
     parrafo.style.display = "flex";
-    swal("Oh nooo!!!!","Debes ingresar algún texto para desencriptar","warning");}
+    swal("Oh nooo!!!","Debes ingresar algún texto para desencriptar","warning");}
 });
 
 copiar.addEventListener("click", copiarTexto);
