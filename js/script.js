@@ -89,5 +89,18 @@ function copiarTexto() {
     });
   }
 
+  function convertir(event) {
+    const textarea = event.target;
+    const texto = textarea.value;
 
+    const textoSinAcentos = texto
+      .toLowerCase()
+      .replace(/á/g, 'a')
+      .replace(/é/g, 'e')
+      .replace(/í/g, 'i')
+      .replace(/ó/g, 'o')
+      .replace(/ú/g, 'u');
+  
+    textarea.value = textoSinAcentos;
+  }
 

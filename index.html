@@ -18,10 +18,10 @@
         </section>
         
         <section class="entrada">
-            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí" oninput="convertir(event)"></textarea>
         </section>
         <section class="texto-condicion">
-            <p>Solo letras minúsculas y sin acentos</p>
+            <p>Las letras ingresadas se verán en minúsculas y sin acentos</p>
         </section>
             <section class="botones">
                 <button class="btn-encriptar" id="btn-encriptar" type="button">Encriptar</button>
