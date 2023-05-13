@@ -263,4 +263,11 @@
         height: 5%;
         top:79%;
     }
+    .mensaje:focus,.mensaje:active{
+        border: none;/**/
+        outline: none;/**/
+    }
+    .mensaje{
+        font-size: 18px;
+    }
 }
