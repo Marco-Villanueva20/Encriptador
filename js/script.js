@@ -96,8 +96,12 @@ copiar.addEventListener("touchend", copiarTexto);
 
 function copiarTexto() {
     let mensaje = document.getElementById("mensaje").value;
+
     let texto = document.getElementById("texto");
     let msj_eti = document.getElementById("mensaje");
+    let tituloMensaje = document.getElementById("titulo-mensaje");
+    let parrafo = document.getElementById("mensaje-ayuda");
+    let munheco = document.getElementById("munheco");
 
     navigator.clipboard.writeText(mensaje);
     swal("Texto copiado",{
@@ -105,13 +109,13 @@ function copiarTexto() {
       buttons: false,
       timer: 1500
     });
+    msj_eti.value ="";
+    texto.value="";
     munheco.style.display = "flex";
-    mensaje.style.display = "none";
+    msj_eti.style.display = "none";
     tituloMensaje.style.display = "flex";
     parrafo.style.display = "flex";
     copiar.style.display="none";
-    texto.value="";
-    msj_eti.value ="";
   }
 
   function convertir(event) {
