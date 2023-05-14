@@ -20,13 +20,14 @@
             .replace(/o/gi, "ober")
             .replace(/u/gi, "ufat");
 
-    if (texto.length <= 0) {
+    if (texto.trim().length <= 0) {
         munheco.style.display = "flex";
         mensaje.style.display = "none";
         copiar.style.display="none";
         tituloMensaje.style.display = "flex";
         parrafo.style.display = "flex";
         swal("Ohh nooo!!!","Debes ingresar algún texto para encriptar","warning");
+        texto_eti.value="";
     } else if(/^[a-z\s]+$/.test(texto)) {
         munheco.style.display = "none";
         parrafo.style.display = "none";
@@ -63,14 +64,14 @@ desencriptar.addEventListener("click",function(){
     .replace(/ober/gi, "o")
     .replace(/ufat/gi, "u");
 
-  if (texto.length <= 0) {
+  if (texto.trim().length <= 0) {
     munheco.style.display = "flex";
     mensaje.style.display = "none";
     copiar.style.display="none";
     tituloMensaje.style.display = "flex";
     parrafo.style.display = "flex";
     swal("Oh nooo!!!","Debes ingresar algún texto para desencriptar","warning");
-   
+    texto_eti.value="";
   } else if(/^[a-z\s]+$/.test(texto)){
     munheco.style.display = "none";
     parrafo.style.display = "none";
