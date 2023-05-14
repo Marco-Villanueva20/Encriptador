@@ -43,7 +43,7 @@
         tituloMensaje.style.display = "flex";
         parrafo.style.display = "flex";
         swal("Ohh nooo!!!","Debes ingresar solo letras a-z","warning");
-        texto_eti="";
+        texto_eti.value="";
     }
     });
 
@@ -97,7 +97,7 @@ copiar.addEventListener("touchend", copiarTexto);
 function copiarTexto() {
     let mensaje = document.getElementById("mensaje").value;
     let texto = document.getElementById("texto");
-    let msj_eti = document.getElementById(mensaje);
+    let msj_eti = document.getElementById("mensaje");
 
     navigator.clipboard.writeText(mensaje);
     swal("Texto copiado",{
