@@ -26,7 +26,6 @@
     text-transform: lowercase;
     resize: none;
 }
-
 .texto::placeholder{
    color: #0a3871;
 }
@@ -128,6 +127,12 @@
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
+.salida img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
 .mensaje-salida{
     display: flex;
     flex-direction: column;
@@ -140,7 +145,7 @@
     top: 65%;
     text-align: center;
 }
-.mensaje-salida h2{
+.titulo-mensaje{
     width: 60%;
     font-family: "Inter";
     font-style: normal;
@@ -159,12 +164,6 @@
     line-height: 150%;
     text-align: center;
     color: #495057;
-}
-.salida img{
-    position: absolute;
-    width: 80%;
-    height: 50%;
-    top: 15%;
 }
 .mensaje{
     display: none;
@@ -233,8 +232,9 @@
         left: 10%;
         top: 53%;
     }
-    .texto-condicion p {
-        font-size: 16px;
+    .texto-condicion p{
+        font-size: 9px;
+        text-align: left;
     }
     .botones{
         width: 80%;
@@ -252,33 +252,32 @@
         left: 10%;
         top: 68%;
     }
-    .mensaje-salida{
-        width: 100%;
-        top: 5%;
-    }
     .salida img{
         top: 0;
         display: none;
         visibility: hidden;
+    }
+    .mensaje-salida{
+        width: 100%;
+        top: 25%;
+    }
+    .titulo-mensaje{
+        font-size: 20px;
+    }
+    .mensaje-ayuda {
+        font-size: 7px;
+    }
+    .mensaje{
+        font-size: 18px;
+    }
+    .mensaje:focus,.mensaje:active{
+        border: none;/**/
+        outline: none;/**/
     }
     .btn-copiar{
         padding: 1% 5% 6% 5%;
         width: 30%;
         height: 5%;
         top:79%;
-    }
-    .mensaje:focus,.mensaje:active{
-        border: none;/**/
-        outline: none;/**/
-    }
-    .mensaje{
-        font-size: 18px;
-    }
-    .texto-condicion p{
-        font-size: 9px;
-        text-align: left;
-    }
-    .mensaje-ayuda {
-        font-size: 7px;
     }
 }
