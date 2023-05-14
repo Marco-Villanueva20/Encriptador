@@ -6,11 +6,12 @@
 
     encriptar.addEventListener("click", function() {
         let mensaje = document.getElementById("mensaje");
-        let texto = document.getElementById("texto").value;
-        
+        let texto_eti = document.getElementById("texto");
         let tituloMensaje = document.getElementById("titulo-mensaje");
         let parrafo = document.getElementById("mensaje-ayuda");
         let munheco = document.getElementById("munheco");
+
+        let texto = document.getElementById("texto").value;
 
     let textoCifrado = texto
             .replace(/e/gi, "enter")
@@ -42,18 +43,19 @@
         tituloMensaje.style.display = "flex";
         parrafo.style.display = "flex";
         swal("Ohh nooo!!!","Debes ingresar solo letras a-z","warning");
-        texto.value="";
+        texto_eti="";
     }
     });
 
 desencriptar.addEventListener("click",function(){
     let mensaje = document.getElementById("mensaje");
-    let texto = document.getElementById("texto").value;
-    
+    let texto_eti = document.getElementById("texto");
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("mensaje-ayuda");
     let munheco = document.getElementById("munheco");
 
+    let texto = document.getElementById("texto").value;
+    
   let textoCifrado = texto
     .replace(/enter/gi, "e")
     .replace(/imes/gi, "i")
@@ -85,7 +87,7 @@ desencriptar.addEventListener("click",function(){
         tituloMensaje.style.display = "flex";
         parrafo.style.display = "flex";
         swal("Oh nooo!!!","Debes ingresar solo letras, verifica","warning");
-        texto.value="";
+        texto_eti.value="";
     }
 });
 
@@ -94,7 +96,8 @@ copiar.addEventListener("touchend", copiarTexto);
 
 function copiarTexto() {
     let mensaje = document.getElementById("mensaje").value;
-    let texto = document.getElementById("texto").value;
+    let texto = document.getElementById("texto");
+    let msj_eti = document.getElementById(mensaje);
 
     navigator.clipboard.writeText(mensaje);
     swal("Texto copiado",{
@@ -107,8 +110,8 @@ function copiarTexto() {
     tituloMensaje.style.display = "flex";
     parrafo.style.display = "flex";
     copiar.style.display="none";
-    texto="";
-    mensaje ="";
+    texto.value="";
+    msj_eti.value ="";
   }
 
   function convertir(event) {
