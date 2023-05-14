@@ -70,9 +70,8 @@ desencriptar.addEventListener("click",function(){
     copiar.style.display="none";
     tituloMensaje.style.display = "flex";
     parrafo.style.display = "flex";
-    swal("Oh nooo!!!","Debes ingresar algún texto para desencriptar","warning");
-    texto_eti.value="";
-  } else if(/^[a-z\s]+$/.test(texto)){
+    swal("Oh nooo!!!","Debes ingresar algún texto para desencriptar","warning");  
+}else if(/^[a-z\s]+$/.test(texto)){
     munheco.style.display = "none";
     parrafo.style.display = "none";
     tituloMensaje.style.display = "none";

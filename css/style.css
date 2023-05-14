@@ -136,27 +136,25 @@
 .mensaje-salida{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     padding: 1%;
     gap: 16px;
     position: absolute;
     width: 100%;
     top: 65%;
+    align-items: center;
     text-align: center;
 }
 .titulo-mensaje{
-    width: 60%;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    text-align: center;
     color: #343a40;
+    text-align: center;
 }
 .mensaje-ayuda {
-    width: 80%;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -165,6 +163,7 @@
     text-align: center;
     color: #495057;
 }
+
 .mensaje{
     display: none;
     position: absolute;
@@ -259,6 +258,7 @@
     }
     .mensaje-salida{
         width: 100%;
+        text-align: center;
         top: 25%;
     }
     .titulo-mensaje{
