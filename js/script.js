@@ -27,7 +27,7 @@
         tituloMensaje.style.display = "flex";
         parrafo.style.display = "flex";
         swal("Ohh nooo!!!","Debes ingresar algún texto para encriptar","warning");
-    } else if(/a-z/.test(texto)) {
+    } else if(/^[a-z\s]+$/.test(texto)) {
         munheco.style.display = "none";
         parrafo.style.display = "none";
         tituloMensaje.style.display = "none";
@@ -71,7 +71,7 @@ desencriptar.addEventListener("click",function(){
     parrafo.style.display = "flex";
     swal("Oh nooo!!!","Debes ingresar algún texto para desencriptar","warning");
    
-  } else if(/a-z/.test(texto)){
+  } else if(/^[a-z\s]+$/.test(texto)){
     munheco.style.display = "none";
     parrafo.style.display = "none";
     tituloMensaje.style.display = "none";
